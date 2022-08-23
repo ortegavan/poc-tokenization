@@ -1,0 +1,29 @@
+<div class="login-container">
+    <div class="login-form">
+        <a href="#">
+            <img src="assets/logo.svg" alt="logo" class="logo">
+        </a>
+        <h1 class="margin-80">Log in</h1>
+        <form [formGroup]="form" (ngSubmit)="entrar()">
+            <div class="margin-80">
+                <p>Endereço de e-mail</p>
+                <input type="text" name="email" id="email" placeholder="exemplo@email.com" formControlName="email">
+            </div>
+            <div class="margin-32">
+                <div class="forgot">
+                    <p>Senha</p>
+                    <a href="#" class="forgot-link">Não se lembra?</a>
+                </div>
+                <input type="password" name="password" id="password" placeholder="********" formControlName="password">
+            </div>
+            <div class="margin-32 alert" *ngIf="error">
+                E-mail e/ou senha inválidos.
+            </div>
+            <div class=" margin-32">
+                <button type="submit" class="btn-primary">Entrar</button>
+            </div>
+        </form>
+    </div>
+    <div class="login-image">
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.projects {
+  padding: 32px 120px 32px 120px;
+}
+
+.projects header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.project-list img {
+  width: 288px;
+  height: 160px;
+  border-radius: 8px;
+}
+
+.project-list img:hover {
+  opacity: 0.75;
+}
+
+.project-list a {
+  cursor: pointer;
+  color: #333333;
+  text-decoration: none;
+}
+
+.project-list a:hover p {
+  color: #999999;
+}

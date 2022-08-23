@@ -1,0 +1,20 @@
+.menu {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #999999;
+}
+
+.active {
+  border-bottom: solid 2px #333333;
+  padding: 28px 0 26px 0;
+}

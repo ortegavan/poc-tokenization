@@ -1,0 +1,46 @@
+<div class="container background-white">
+    <div class="projects">
+        <header>
+            <div class="title">
+                <a href="#">
+                    <img src="assets/logo.svg" alt="logo" class="logo">
+                </a>
+                <h2>Meus projetos</h2>
+            </div>
+            <div>
+                <button class="btn-secondary margin-8-right">
+                    <i class="fa-regular fa-alarm-clock"></i>
+                </button>
+                <button class="btn-primary">
+                    <i class="fa-regular fa-grid-2-plus"></i> Adicionar projeto
+                </button>
+            </div>
+        </header>
+        <section class="margin-80">
+            <p>
+                <i class="fa-regular fa-clock-rotate-left"></i> Vistos recentemente
+            </p>
+            <div class="project-list margin-32">
+                <a href="#" *ngFor="let project of recents">
+                    <img [src]="'assets/' + project.image" [alt]="project.name">
+                    <p>
+                        <strong>{{ project.name }}</strong>
+                    </p>
+                </a>
+            </div>
+        </section>
+        <section class="margin-80">
+            <p>
+                <i class="fa-regular fa-grid-2"></i> Todos os projetos
+            </p>
+            <div class="project-list margin-32">
+                <a href="#" *ngFor="let project of projects">
+                    <img [src]="'assets/' + project.image" [alt]="project.name">
+                    <p>
+                        <strong>{{ project.name }}</strong>
+                    </p>
+                </a>
+            </div>
+        </section>
+    </div>
+</div>

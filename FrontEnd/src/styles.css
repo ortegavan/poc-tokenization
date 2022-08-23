@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #eaeaea;
+  color: #333333;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.alert {
+  color: #e84c62;
+}
+
+.margin-8-right {
+  margin-right: 8px;
+}
+
+.margin-32 {
+  margin-top: 32px;
+}
+
+.margin-32-right {
+  margin-right: 32px;
+}
+
+.margin-32-left {
+  margin-left: 32px;
+}
+
+.margin-80 {
+  margin-top: 80px;
+}
+
+.margin-120 {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.background-white {
+  background-color: #ffffff;
+}
+
+.background-gray {
+  background-color: #eaeaea;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 62px;
+  height: 62px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 440px;
+  height: 48px;
+  border-radius: 8px;
+  border: 2px solid #999999;
+  padding-left: 16px;
+  margin-top: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #333333;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #fabe0e;
+  caret-color: #fabe0e;
+}
+
+.btn-primary {
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  background-color: #fabe0e;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 32px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #ffcb34;
+}
+
+.btn-secondary {
+  height: 48px;
+  border-radius: 8px;
+  border: solid 1px #333333;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 32px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #eaeaea;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title h2 {
+  margin-top: 8px;
+}
